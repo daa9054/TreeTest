@@ -1,16 +1,15 @@
-#ifndef _MAIN_H
-#define _MAIN_H
-
 #include <iostream>
-
-//helper libraries that have functions that check for memory leaks
-#define _CRTDBG_MAP_ALLOC
-#include <stdlib.h>
-#include <crtdbg.h>
-
-#endif //_MAIN_H
+#include "Tree.h"
 
 int main()
 {
+	std::cout<< "Welcome to My Dynamic Tree Creation Program" << std::endl
+		<<"Please Enter How Many Levels You Would Like to Generate." << std::endl;
+
+	int input;
+	std::cin>>input;
+
+	Tree tree(input);
+	tree.Insert(tree.root, 1);
 	return 0;
 }

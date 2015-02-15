@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Node.h"
+#include <iostream>
 class Tree
 {
 public:
@@ -8,9 +9,8 @@ public:
 	~Tree(void);
 
 	int endResult;
-	void Insert(int input, Node* current);
-	void PrintTree();
-private:
+	void Insert(Node* current, int currentLevel);
+	void PrintNode(Node* node);
 	Node* root;
 };
 
