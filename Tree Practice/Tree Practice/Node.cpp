@@ -1,4 +1,6 @@
 #include "Node.h"
+//David Amata
+//February 17, 2015
 
 Node::Node(int input, Node* par, int lvl, std::string lor)
 {
